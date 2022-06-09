@@ -17,14 +17,46 @@ Figure -01 PROM
  
 ### Procedure
 /* write all the steps invloved */
-
+1.give all the input
+2.give the rom values
+3.the verify the output and take the rtl
+4.then take the waveform
+5.complete the program
 
 
 ### PROGRAM 
 /*
 Program for PROM 
-Developed by: 
-RegisterNumber:  
+Developed by: Jagan a
+RegisterNumber: 212221230037'
+module nex ( out,addr,clk);
+output [15:0] out;
+input [3:0]addr;
+input clk;
+reg [15:0] out;
+reg [15:0] Rom [15:0];
+always @ (negedge clk)
+begin 
+Rom [0] = 16'h 5601;
+Rom [1] = 16'h 5603;
+Rom [2] = 16'h 1234;
+Rom [3] = 16'h 3745;
+Rom [4] = 16'h 6765;
+Rom [5] = 16'h 7701;
+Rom [6] = 16'h 4434;
+Rom [7] = 16'h 1050;
+Rom [8] = 16'h 1144;
+Rom [9] = 16'h 1628;
+Rom [10] = 16'h 2122;
+Rom [11] = 16'h 3122;
+Rom [12] = 16'h 9678;
+Rom [13] = 16'h 4321;
+Rom [14] = 16'h 7622;
+Rom [15] = 16'h 4324;
+out=Rom[addr];
+end
+endmodule
+
 */
 
 
@@ -36,6 +68,7 @@ RegisterNumber:
 
 
 
+![exp 10](https://user-images.githubusercontent.com/59290560/172764181-7133e4f8-f62f-441a-8aed-48b2f0708bee.png)
 
 
 
@@ -45,12 +78,9 @@ RegisterNumber:
 
 
 
-
-
- 
-
-
+![tttt](https://user-images.githubusercontent.com/59290560/172764791-160b0821-95bf-4a0a-8bde-7df13cb568a7.jpeg)
 
 
 
 ### RESULTS 
+Thus the program to design a programmable logical device is done successul.
